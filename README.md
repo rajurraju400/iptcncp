@@ -1,9 +1,8 @@
-> This project is created to provide complete step by step instruction to build the NCP/OCP hub cluster and deploy the workload cluster via the ZTP process. 
-
 # NCP 24.7 MP1 installation on the HPE protait gen9 blade servers
 
 > Procedure created for NAM Market's Tuchuong team members only. 
 
+This project is created to provide complete step by step instruction to build the NCP/OCP hub cluster and deploy the workload cluster via the ZTP process. 
 
 ## Discliamer 
 
