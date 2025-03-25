@@ -112,3 +112,26 @@ reload the daemon here
 [root@ncputility ~]# sudo systemctl daemon-reload
 [root@ncputility ~]# 
 ```
+
+
+VAlidate the DNS is working fine here
+```
+[root@ncputility ~]# nslookup 135.104.149.142
+142.149.104.135.in-addr.arpa	name = ncputility.nokiptchub01.nokia.usa.
+
+[root@ncputility ~]# nslookup ncputility.nokiptchub01.nokia.usa
+Server:		135.104.149.142
+Address:	135.104.149.142#53
+
+Name:	ncputility.nokiptchub01.nokia.usa
+Address: 135.104.149.142
+
+[root@ncputility ~]# nslookup raj.apps.nokiptchub01.nokia.usa
+Server:		135.104.149.142
+Address:	135.104.149.142#53
+
+Name:	raj.apps.nokiptchub01.nokia.usa
+Address: 135.104.149.143
+
+[root@ncputility ~]# 
+```
