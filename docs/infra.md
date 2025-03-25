@@ -4,7 +4,8 @@
 
 #### Install the DNS server 
 
-```[root@ncputility ~]# dnf install dnsmasq
+```
+[root@ncputility ~]# dnf install dnsmasq
 Updating Subscription Management repositories.
 Unable to read consumer identity
 
