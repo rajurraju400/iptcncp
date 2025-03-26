@@ -1,16 +1,12 @@
+# OCP User management using htpassword
 
 
+## Configure HTPASSWD as an identity provider for OCP
+ 
 
-## Create an user using HTPASSWD as indentity  provider
+## Add, update, remove users for OCP using htpasswd as indentity provider. 
 
-*) [Create user ](https://docs.redhat.com/en/documentation/openshift_container_platform/4.10/html/authentication_and_authorization/configuring-identity-providers#identity-provider-htpasswd-update-users_configuring-htpasswd-identity-provider)
-
-## update the passwd for OCP using htpasswd as indentity provider. 
-
-*) [delete the user or add user or change passwd](https://access.redhat.com/solutions/4039941#:~:text=Prerequisites,Example%20output:)
-
-
-#### Procedure Add an additional users
+#### Procedure to `Add` an additional users
 
 1) Retrieve the htpasswd file from the htpass-secret Secret object and save the file to your file system:
 
@@ -66,7 +62,7 @@ nokia
 
 
 
-#### Procedure update the passwd of an existing users
+#### Procedure to `update` the password of an existing users
 
 
 1) Retrieve the htpasswd file from the htpass-secret Secret object and save the file to your file system:
@@ -131,7 +127,7 @@ You don't have any projects. You can try to create a new project, by running
 ```
 
 
-#### Procedure Delete an user completely
+#### Procedure to `delete` an user completely
 
 
 1) Retrieve the htpasswd file from the htpass-secret Secret object and save the file to your file system:
@@ -194,3 +190,12 @@ You don't have any projects. You can try to create a new project, by running
 [root@dom14npv101-infra-manager ~ hub]# 
 
 ```
+
+#### Disclaimer 
+
+> All these procedures are collected from redhat link given below. 
+
+#### References
+
+*) [Create user ](https://docs.redhat.com/en/documentation/openshift_container_platform/4.10/html/authentication_and_authorization/configuring-identity-providers#identity-provider-htpasswd-update-users_configuring-htpasswd-identity-provider)
+*) [delete the user or add user or change passwd](https://access.redhat.com/solutions/4039941#:~:text=Prerequisites,Example%20output:)
