@@ -218,3 +218,5 @@ Verify you have provided the correct credentials.
 
 
 * [To configure an HTPasswd identity provider in OpenShift 4](https://access.redhat.com/solutions/4039941#:~:text=Prerequisites,Example%20output:)
+
+* [Remove kubeadmin id](https://docs.redhat.com/en/documentation/openshift_container_platform/4.8/html/authentication_and_authorization/removing-kubeadmin#understanding-kubeadmin_removing-kubeadmin)
