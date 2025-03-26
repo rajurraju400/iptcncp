@@ -170,23 +170,40 @@ oauth-openshift-6497ccb4f5-d5wxd   0/1     Pending       0          0s      <non
 
 ```
 
-5) Validate the login now. 
+5) If you removed one or more users, you must additionally remove existing resources for each user.
+
+    a) Delete the User object:
+
+    ```
+    [root@dom14npv101-infra-manager ~ hub]# oc get user 
+    NAME       UID                                    FULL NAME   IDENTITIES
+    ncpadmin   8e728883-a17f-4bde-8b0f-2eab78ccc6c3               my_htpasswd_provider:ncpadmin
+    nokia      7e44ba3a-8d91-435f-800f-380a8e87f0d1               my_htpasswd_provider:nokia
+    [root@dom14npv101-infra-manager ~ hub]# oc delete user nokia 
+    user.user.openshift.io "nokia" deleted
+    [root@dom14npv101-infra-manager ~ hub]# 
+
+    ```
+    b) Be sure to remove the user, otherwise the user can continue using their token as long as it has not expired.
+
+    ```
+    [root@dom14npv101-infra-manager ~ hub]#  oc get identity 
+    NAME                            IDP NAME               IDP USER NAME   USER NAME   USER UID
+    my_htpasswd_provider:ncpadmin   my_htpasswd_provider   ncpadmin        ncpadmin    8e728883-a17f-4bde-8b0f-2eab78ccc6c3
+    my_htpasswd_provider:nokia      my_htpasswd_provider   nokia           nokia       7e44ba3a-8d91-435f-800f-380a8e87f0d1
+    [root@dom14npv101-infra-manager ~ hub]# oc delete identity my_htpasswd_provider:nokia  
+    identity.user.openshift.io "my_htpasswd_provider:nokia" deleted
+    [root@dom14npv101-infra-manager ~ hub]# 
+    ```
+
+5) Validate the login and it should not work. 
 
 ```
-[root@dom14npv101-infra-manager ~ hub]# oc login -u nokia -p nokia@123
+[root@dom14npv101-infra-manager ~ hub]# oc login -u nokia -p nokia@1234
 WARNING: Using insecure TLS client config. Setting this option is not supported!
 
 Login failed (401 Unauthorized)
 Verify you have provided the correct credentials.
-[root@dom14npv101-infra-manager ~ hub]# oc login -u nokia -p nokia@1234
-WARNING: Using insecure TLS client config. Setting this option is not supported!
-
-Login successful.
-
-You don't have any projects. You can try to create a new project, by running
-
-    oc new-project <projectname>
-
 [root@dom14npv101-infra-manager ~ hub]# 
 
 ```
