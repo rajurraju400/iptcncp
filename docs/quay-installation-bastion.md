@@ -17,7 +17,7 @@ tee -a /etc/fstab
 sudo mount -a
 ```
 5. Create a local repo from the ISO which is mounted:
-
+```
 cat << 'EOF' | sudo tee -a /etc/yum.repos.d/rhel9.4dvd.repo
 [BaseOS]
 name=BaseOS Packages Red Hat Enterprise Linux 9
@@ -34,7 +34,7 @@ enabled=1
 baseurl=file:///mnt/rhel9.4/AppStream/
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
 EOF
-
+```
 6. Install the necessary packages:
 
 ```
