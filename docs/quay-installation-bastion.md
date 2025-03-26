@@ -4,18 +4,18 @@
 
 
 1. Login to the node via SSH, using the user created with Administrator privileges. Root user is not needed.
-For higher security, key based authentication can be used for SSH and the password authentication may
-be disabled.
-2. Verify the hostname of the node using hostname -f command
-3. Copy the rhel_rhcos.tar.gz to the node. Uncompress it using the command tar `rhel_rhcos.tar.gz.-zxvf`
+    For higher security, key based authentication can be used for SSH and the password authentication may
+    be disabled.
+2. Verify the hostname of the node using `hostname -f` command
+3. Copy the `rhel_rhcos.tar.gz` to the node. Uncompress it using the command tar `rhel_rhcos.tar.gz.-zxvf`
 4. Create a directory to mount the ISO file
-
+```
 sudo cp rhel-9.4-x86_64-dvd.iso /mnt
 sudo mkdir -p /mnt/rhel9.4
 echo '/mnt/rhel-9.4-x86_64-dvd.iso /mnt/rhel9.4/ iso9660 loop 0 0' | sudo
 tee -a /etc/fstab
 sudo mount -a
-
+```
 5. Create a local repo from the ISO which is mounted:
 
 cat << 'EOF' | sudo tee -a /etc/yum.repos.d/rhel9.4dvd.repo
@@ -76,74 +76,8 @@ Dependencies resolved.
  Package                                            Architecture                           Version                                          Repository                                 Size
 ============================================================================================================================================================================================
 Installing:
- httpd                                              x86_64                                 2.4.57-8.el9                                     AppStream                                  52 k
- mkpasswd                                           x86_64                                 5.5.9-4.el9                                      AppStream                                  28 k
- nmstate                                            x86_64                                 2.2.25-1.el9                                     AppStream                                 2.8 M
- tmux                                               x86_64                                 3.2a-5.el9                                       BaseOS                                    476 k
-Installing dependencies:
- apr                                                x86_64                                 1.7.0-12.el9_3                                   AppStream                                 126 k
- apr-util                                           x86_64                                 1.6.1-23.el9                                     AppStream                                  97 k
- apr-util-bdb                                       x86_64                                 1.6.1-23.el9                                     AppStream                                  14 k
- httpd-core                                         x86_64                                 2.4.57-8.el9                                     AppStream                                 1.5 M
- httpd-filesystem                                   noarch                                 2.4.57-8.el9                                     AppStream                                  15 k
- httpd-tools                                        x86_64                                 2.4.57-8.el9                                     AppStream                                  87 k
- redhat-logos-httpd                                 noarch                                 90.4-2.el9                                       AppStream                                  18 k
- whois-nls                                          noarch                                 5.5.9-4.el9                                      AppStream                                  37 k
-Installing weak dependencies:
- apr-util-openssl                                   x86_64                                 1.6.1-23.el9                                     AppStream                                  17 k
- mod_http2                                          x86_64                                 2.0.26-1.el9                                     AppStream                                 167 k
- mod_lua                                            x86_64                                 2.4.57-8.el9                                     AppStream                                  61 k
-
-Transaction Summary
-============================================================================================================================================================================================
-Install  15 Packages
-
-Total size: 5.5 M
-Installed size: 16 M
-Is this ok [y/N]: y
-Downloading Packages:
-Running transaction check
-Transaction check succeeded.
-Running transaction test
-Transaction test succeeded.
-Running transaction
-  Preparing        :                                                                                                                                                                    1/1 
-  Installing       : apr-1.7.0-12.el9_3.x86_64                                                                                                                                         1/15 
-  Installing       : apr-util-bdb-1.6.1-23.el9.x86_64                                                                                                                                  2/15 
-  Installing       : apr-util-openssl-1.6.1-23.el9.x86_64                                                                                                                              3/15 
-  Installing       : apr-util-1.6.1-23.el9.x86_64                                                                                                                                      4/15 
-  Installing       : httpd-tools-2.4.57-8.el9.x86_64                                                                                                                                   5/15 
-  Installing       : whois-nls-5.5.9-4.el9.noarch                                                                                                                                      6/15 
-  Installing       : redhat-logos-httpd-90.4-2.el9.noarch                                                                                                                              7/15 
-  Running scriptlet: httpd-filesystem-2.4.57-8.el9.noarch                                                                                                                              8/15 
-  Installing       : httpd-filesystem-2.4.57-8.el9.noarch                                                                                                                              8/15 
-  Installing       : httpd-core-2.4.57-8.el9.x86_64                                                                                                                                    9/15 
-  Installing       : mod_lua-2.4.57-8.el9.x86_64                                                                                                                                      10/15 
-  Installing       : mod_http2-2.0.26-1.el9.x86_64                                                                                                                                    11/15 
-  Installing       : httpd-2.4.57-8.el9.x86_64                                                                                                                                        12/15 
-  Running scriptlet: httpd-2.4.57-8.el9.x86_64                                                                                                                                        12/15 
-  Installing       : mkpasswd-5.5.9-4.el9.x86_64                                                                                                                                      13/15 
-  Installing       : nmstate-2.2.25-1.el9.x86_64                                                                                                                                      14/15 
-  Installing       : tmux-3.2a-5.el9.x86_64                                                                                                                                           15/15 
-  Running scriptlet: tmux-3.2a-5.el9.x86_64                                                                                                                                           15/15 
-  Running scriptlet: httpd-2.4.57-8.el9.x86_64                                                                                                                                        15/15 
-  Running scriptlet: tmux-3.2a-5.el9.x86_64                                                                                                                                           15/15 
-  Verifying        : tmux-3.2a-5.el9.x86_64                                                                                                                                            1/15 
-  Verifying        : apr-1.7.0-12.el9_3.x86_64                                                                                                                                         2/15 
-  Verifying        : apr-util-1.6.1-23.el9.x86_64                                                                                                                                      3/15 
-  Verifying        : apr-util-bdb-1.6.1-23.el9.x86_64                                                                                                                                  4/15 
-  Verifying        : apr-util-openssl-1.6.1-23.el9.x86_64                                                                                                                              5/15 
-  Verifying        : httpd-2.4.57-8.el9.x86_64                                                                                                                                         6/15 
-  Verifying        : httpd-core-2.4.57-8.el9.x86_64                                                                                                                                    7/15 
-  Verifying        : httpd-filesystem-2.4.57-8.el9.noarch                                                                                                                              8/15 
-  Verifying        : httpd-tools-2.4.57-8.el9.x86_64                                                                                                                                   9/15 
-  Verifying        : mkpasswd-5.5.9-4.el9.x86_64                                                                                                                                      10/15 
-  Verifying        : mod_http2-2.0.26-1.el9.x86_64                                                                                                                                    11/15 
-  Verifying        : mod_lua-2.4.57-8.el9.x86_64                                                                                                                                      12/15 
-  Verifying        : nmstate-2.2.25-1.el9.x86_64                                                                                                                                      13/15 
-  Verifying        : redhat-logos-httpd-90.4-2.el9.noarch                                                                                                                             14/15 
-  Verifying        : whois-nls-5.5.9-4.el9.noarch                                                                                                                                     15/15 
-Installed products updated.
+ httpd                                              x86_64                                 2.4.57-8.el9                                     
+ ** output **
 
 Installed:
   apr-1.7.0-12.el9_3.x86_64         apr-util-1.6.1-23.el9.x86_64            apr-util-bdb-1.6.1-23.el9.x86_64        apr-util-openssl-1.6.1-23.el9.x86_64    httpd-2.4.57-8.el9.x86_64       
@@ -193,7 +127,7 @@ public (active)
 [root@ncputility ~]# 
 ```
 
-9. Set NTP servers:
+9. Set NTP servers, Udate the correct ntp ip on the configuration file `/etc/chrony.conf`
 
 ```
 [root@ncputility ~]# sudo vi /etc/chrony.conf^C
