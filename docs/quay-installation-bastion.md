@@ -226,6 +226,7 @@ The owner shall be the Linux user who is installing it. For example:
 sudo chown <user:user> /opt/quayroot/
 
     a. extract the mirror-registry file.
+    
     ```
     [root@ncputility ncp]# tar -xvf mirror-registry.tar.gz
     image-archive.tar
