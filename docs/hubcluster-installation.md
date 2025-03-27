@@ -59,3 +59,33 @@ The key's randomart image is:
 6. Required inputs for install_config can be checked or gathered like mentioned in Hub Cluster Install Config Inputs
 7. In the `agent-config.yaml`, all the nodes shall be specified and their networking which will be part of the HUB cluster.
 8. Required inputs for `install_config` can be checked or gathered like mentioned in Hub Cluster Agent Config Inputs
+
+
+There are additional manifests which are providing the partitioning of OS and optionally password can be set for the core Linux user on the HUB cluster’s nodes (not recommended to have core user password butane manifest as part of artifacts here). 
+
+
+#### agent based templates
+
+You will receive all the required templates for agent based installation from your DA. Please work with DA for getting the right template and validate it multiple times. 
+
+##### Structure of directory 
+
+Create a folder where the install-config.yaml and the agent-config.yaml can be stored.
+
+In this folder create a folder called OpenShift. Put the extra manifests there. If the openshift-install is started, then these files will be deleted automatically and the authentication data will be there only, so it is suggested to create a backup of this folder.
+Example:
+
+
+```
+[root@ncputility hubfeb10]# tree .
+.
+├── agent-config.yaml
+├── install-config.yaml
+└── openshift
+    ├── 98-master-core-pass.yaml
+    └── 98-master-partition.yaml
+
+1 directory, 4 files
+[root@ncputility hubfeb10]#
+
+```
