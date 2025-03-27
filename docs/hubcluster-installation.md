@@ -70,10 +70,11 @@ You will receive all the required templates for agent based installation from yo
 
 ##### Structure of directory 
 
-Create a folder where the install-config.yaml and the agent-config.yaml can be stored.
+Create a folder where the `install-config.yaml` and the `agent-config.yaml` can be stored.
 
-In this folder create a folder called OpenShift. Put the extra manifests there. If the openshift-install is started, then these files will be deleted automatically and the authentication data will be there only, so it is suggested to create a backup of this folder.
-Example:
+In this folder create a folder called OpenShift. Put the extra manifests there. If the `openshift-install` is started, then these files will be deleted automatically and the authentication data will be there only, so it is `suggested to create a backup of this folder`.
+
+`Example:`
 
 
 ```
