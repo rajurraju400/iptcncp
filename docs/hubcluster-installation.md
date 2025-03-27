@@ -1,6 +1,6 @@
 ## Hub Cluster installation on gen-9 hardware
 
-### initial preparation 
+### Initial preparation 
 
 #### Generate the ssh key for authenticating with core OS. 
 
@@ -52,9 +52,9 @@ The key's randomart image is:
 #### Preparing the artifacts
 
 1. The used method is the Agent-based installation for the HUB cluster.
-2. For the HUB cluster installation, the openshift-install binary will be used. It is important to know that for each OCP version a dedicated version of 3. 3. 3. openshift-install binary exists. In the ncp_tools.tar.gz, all the openshift related binaries are for OCP version 4.14.22.
+2. For the HUB cluster installation, the `openshift-install` binary will be used. It is important to know that for each OCP version a dedicated version of 3. 3. 3. `openshift-install` binary exists. In the `ncp_tools.tar.gz`, all the openshift related binaries are for OCP version 4.14.22.
 4. There are two main files which needs to be prepared, the agent-config.yaml and the install-config.yaml. 
-5. The install-config.yaml contains the cluster specific settings, like which CNI shall be used, cluster network, service network, base domain and cluster network, ssh-key. Furthermore, in this file the local mirror registry shall be specified as the source of the images. 
+5. The `install-config.yaml` contains the cluster specific settings, like which CNI shall be used, cluster network, service network, base domain and cluster network, ssh-key. Furthermore, in this file the local mirror registry shall be specified as the source of the images. 
 6. Required inputs for install_config can be checked or gathered like mentioned in Hub Cluster Install Config Inputs
-7. In the agent-config.yaml, all the nodes shall be specified and their networking which will be part of the HUB cluster.
-8. Required inputs for install_config can be checked or gathered like mentioned in Hub Cluster Agent Config Inputs
+7. In the `agent-config.yaml`, all the nodes shall be specified and their networking which will be part of the HUB cluster.
+8. Required inputs for `install_config` can be checked or gathered like mentioned in Hub Cluster Agent Config Inputs
