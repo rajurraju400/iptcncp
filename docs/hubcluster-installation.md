@@ -7,10 +7,10 @@
 
 `HW basic configurations or Settings :`
 
-> Refer HW CERTIFICATION NOTE  to set bios settings for nodes . In NCES we are using compact Hub Cluster meaning 3 servers act as Master+Worker+ODF node hence . Bios Settings are done for master and storage node related 
+> Refer HW CERTIFICATION NOTE  to set bios settings for nodes . In NCES we are using compact Hub Cluster meaning 3 servers act as Master+Worker+ODF node hence . Bios Settings are done for master and storage node related.
 
 
-1.1. Highlevel settings are ( Example only ) 
+    1a. Highlevel settings :
     *) Boot mode is set to UEFI.
     *) For worker nodes HW RAID1 is configured (as they supposed to have 2 OS disks)
     *) For master nodes RADI10 is configured for the 4 OS Disks. Extra capacity disks in the master nodes shall be used by the ODF as storage backend devices. 
