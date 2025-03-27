@@ -64,7 +64,7 @@ The key's randomart image is:
 There are additional manifests which are providing the partitioning of OS and optionally password can be set for the core Linux user on the HUB cluster’s nodes (not recommended to have core user password butane manifest as part of artifacts here). 
 
 
-#### agent based templates
+#### Agent based templates
 
 You will receive all the required templates for agent based installation from your DA. Please work with DA for getting the right template and validate it multiple times. 
 
