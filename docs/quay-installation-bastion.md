@@ -544,11 +544,11 @@ Login Succeeded!
 
 1.	Create an organization in Quay:
 
-![alt text](image.png)
+![alt text](images/image-1.png)
 
 2.	Click create New organization
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 3.	In the example above the ocmirror organization was created. 
 
@@ -631,5 +631,49 @@ sha256:91b6872c930e6d846fb94eb314df9fa4e0f35a7a234462329ea1e0911ed98e00 ncputili
 sha256:152e719fa5c0a8326fb845884a761c7976521201ac912932992df020bda77fae ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer:b068f7cc
 info: Mirroring completed in 5.52s (125MB/s)
 
+uploading: ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer sha256:ba4c748f34a20478f7334a3e29888150985cd77bf5667cb28df709f8349e14fb 55.28MiB
+uploading: ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer sha256:8bad510b7a13af38e38c6a4b66c8beaac49b44c2f1bac22068b1001bae266f3e 81.92MiB
+uploading: ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer sha256:d074e0420aa5a047ac468c239178ef5f660b03920ad2f7f7e6a1d71530069db5 10.1MiB
+uploading: ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer sha256:f26b1ec0865cd5bcc30994a1d00d16f6f1bad44dd538ee1df0e8840753595738 21.78KiB
+uploading: ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer sha256:70a5bdb4264951ee2dfdc73b51c3c8ab99a611d9ac3acaf4a81988a075b5b845 21.69MiB
+uploading: ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer sha256:abb828c6dd68e53a22f7a11904b72f9d5a7802fb5e7c380b3a22b18a02e9a463 73.31MiB
+uploading: ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer sha256:f44954f3b43a0b5ee76801b112b069aecdb6ce7b387ed3fb72bec893f848c89a 54.58MiB
+uploading: ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer sha256:7be6430836eaa16b36440931da447277c710585b321a59f555d455e6b9f9689e 10.28MiB
+uploading: ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer sha256:e892ff5d6fa3cef8357fcaa97f0f534e4f454439edadf9cbb820482420817585 21.91MiB
+uploading: ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer sha256:4caf23c20c871ed5c847c163905c27ee724b9e10975f1711715589a52942b3d5 53.47MiB
+uploading: ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer sha256:ca4e3da08236e2c5f895043898246830e8a394a483c5ba66aa25635ea19d4c69 21.78KiB
+uploading: ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer sha256:357d8d6388d50c5e60475784a9956fcff8a1e66f48ae978c0e691fd587b76248 10.25MiB
+uploading: ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer sha256:bfdc7c9d33c28bd179f2b99aea50e8e86a372a209dfe272757d32965644f8c59 21.76KiB
+uploading: ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer sha256:89176521898ace7eab9ccf870f6e4e5e3a21c3688df09c9346a3cf6f909f1188 23.84MiB
+uploading: ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer sha256:00f24979220b92c40dbe75e7f85475c5d14efe31c4b0f2c8c2ea50bf359986ec 10.97MiB
+uploading: ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer sha256:96e84521ae3a855d5ef74239d41bdc2cd5c2d0db0fd71006823f9cab7b5ae5d6 21.76KiB
+uploading: ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer sha256:c7965aa7086045a59bdb113a1fb8a19d7ccf7af4133e59af8ecefd39cda8e0b1 75.31MiB
+uploading: ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer sha256:5b92631cae6df8d9aef617e5a07532336e5c2a09d7c5418592ea6188a7e10a0c 72.73MiB
+uploading: ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer sha256:5cac740fb8a68c72180f72cbe2227abcdb92f2acc1ee68141b720e2e16e3daed 23.64MiB
+sha256:a1395b66e122f878c6abdb229134d5150832e9f95b6278e823095bb66da7203d ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer
+sha256:a007417b5129999c3aa2391802b9d1131d67bd735acb0e4e83f2232da56b51a2 ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer
+sha256:69640e0eade25e28d6f08c98bed2a0a9e7120b4b6e5a3510ca3741681c79c096 ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer
+sha256:91b6872c930e6d846fb94eb314df9fa4e0f35a7a234462329ea1e0911ed98e00 ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer
+sha256:152e719fa5c0a8326fb845884a761c7976521201ac912932992df020bda77fae ncputility.nokiptchub01.nokia.usa:8443/ocmirror/openshift4/ose-csi-external-resizer:b068f7cc
+info: Mirroring completed in 5.52s (125MB/s)
 
+catalogs/registry.redhat.io/redhat/redhat-operator-index/v4.16/layout/blobs/sha256/d74e8b702f03952802c351c423f5a15bd670d0558f3f25e04d27bfc1964d68f6
+catalogs/registry.redhat.io/redhat/redhat-operator-index/v4.16/layout/blobs/sha256/d97215b78c445a91c5e9676d137c6c9fa1cbef72ce82425316432b221360f9a1
+catalogs/registry.redhat.io/redhat/redhat-operator-index/v4.16/layout/blobs/sha256/ed1748ba861420cf9f23989a033c63968dcb227442f5d70ff5088fc2f163b44b
+catalogs/registry.redhat.io/redhat/redhat-operator-index/v4.16/layout/blobs/sha256/f20db0aa394f8fd833f0f3d35bd505ecbddcc38d501afaea85ef28ac5c446ee9
+catalogs/registry.redhat.io/redhat/redhat-operator-index/v4.16/layout/blobs/sha256/f371e370ccf3b0b9ed6e19bf73c29f180e3e288bf25cea4df13d52c27f24ebff
+catalogs/registry.redhat.io/redhat/redhat-operator-index/v4.16/layout/blobs/sha256/f6eee3a6ec21314c3c091044142276b65fb7ae526e21cb2288af902735496b96
+catalogs/registry.redhat.io/redhat/redhat-operator-index/v4.16/layout/blobs/sha256/f85f9539a5bfe9b773c454c22e77875de533ce99aacf5f24efd6d159c06b0405
+catalogs/registry.redhat.io/redhat/redhat-operator-index/v4.16/layout/index.json
+catalogs/registry.redhat.io/redhat/redhat-operator-index/v4.16/layout/oci-layout
+Rendering catalog image "ncputility.nokiptchub01.nokia.usa:8443/ocmirror/redhat/certified-operator-index:v4.16" with file-based catalog 
+Rendering catalog image "ncputility.nokiptchub01.nokia.usa:8443/ocmirror/redhat/redhat-operator-index:v4.16" with file-based catalog 
+Writing image mapping to oc-mirror-workspace/results-1743029387/mapping.txt
+Writing CatalogSource manifests to oc-mirror-workspace/results-1743029387
+Writing ICSP manifests to oc-mirror-workspace/results-1743029387
+[root@ncputility ncp]# 
 ```
+
+5. When you reload your quay registry, you will be able to see the images uploaded. 
+
+![alt text](images/image2.png)
