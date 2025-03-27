@@ -5,7 +5,7 @@
 
 1. Access to the BMC of the nodes. 
 
-`HW basic configurations or Settings :`
+    `HW basic configurations or Settings :`
 
 > Refer HW CERTIFICATION NOTE  to set bios settings for nodes . In NCES we are using compact Hub Cluster meaning 3 servers act as Master+Worker+ODF node hence . Bios Settings are done for master and storage node related.
 
@@ -18,9 +18,7 @@
 Make sure you have gone through TSN-01 and TSN-03 ( available on TSN Section)  for this step as there might be little deviation from base artifacts or configuration approach . Do check Latest HW Certification Latest issue for particular HW to align with NCP release . 
 
 2. DNS entries for the Openshift clusters is a must, otherwise the installation would fail.
-Generate a keypair for ssh access of the HUB cluster nodes, using ssh-keygen. 
-Preferred algorithm is ed25519. Use the command: 
-It will keep pub in .ssh folder 
+3. Generate a keypair for ssh access of the HUB cluster nodes, using ssh-keygen. Preferred algorithm is `ed25519`. Use the command, It will keep pub in .ssh folder.
 
 
 ```
