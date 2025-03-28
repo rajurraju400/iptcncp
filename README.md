@@ -11,3 +11,6 @@ This project is created to provide complete step by step instruction to build th
 #### NCP LLD for HUB and CWL clusters
 
 * [hub cluster LLD for IPTC lab](LLDs/NCP-CWL-PAN01-LLD.v0.7.xlsx)
+
+
+Next: [Quay installation](./docs/quay-installation-bastion.md)<br>
