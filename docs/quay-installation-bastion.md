@@ -677,3 +677,7 @@ Writing ICSP manifests to oc-mirror-workspace/results-1743029387
 5. When you reload your quay registry, you will be able to see the images uploaded. 
 
 ![alt text](images/image2.png)
+
+
+
+Next: [HUB INSTALLATION](hubcluster-installation.md)<br>
